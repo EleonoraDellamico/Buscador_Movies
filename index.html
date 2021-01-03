@@ -12,13 +12,17 @@
 				<img src="assets/img/Logo.png" alt="Logo" />
 			</a>
 			<button class="navbar__toggler" id="searchIconMobile">
-				<img src="assets/img/icons8-busca-mas-50.png" alt="logoSearch" />
+				<img
+					src="assets/img/icons8-busca-mas-50.png"
+					alt="logoSearch"
+					onclick="toggleSearchMenu()"
+				/>
 			</button>
 			<div class="navbar__collapse collapse" id="navbarSearchNav">
 				<div class="search__container">
 					<div class="search__form">
 						<input type="text" id="inputSearch" />
-						<button>Buscar</button>
+						<button onclick="searchMovie()">Buscar</button>
 					</div>
 					<ul
 						class="movies__list__container"
@@ -27,6 +31,7 @@
 				</div>
 			</div>
 		</nav>
+		<script src="assets/key.js"></script>
 		<script src="index.js"></script>
 	</body>
 </html>
